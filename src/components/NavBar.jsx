@@ -69,15 +69,15 @@ const NavBar = () => {
           )}
         </div>
         {nav && (
-          <div className="absolute md:top-[175px] top-[100px] left-0 right-0 h-[100vh] bg-white">
-            <li className="flex flex-col gap-3 px-6 text-xl font-medium pt-10 items-center">
+          <div className="absolute md:top-[153px] top-[103px] left-0 right-0 h-[100vh] bg-black">
+            <li className="flex flex-col gap-3 px-6 text-xl font-medium pt-20 items-center">
               {links.map((linkData) => {
                 const isActive = pathname.startsWith(linkData.herf);
                 return (
                   <Link
                     onClick={() => setNav(!nav)}
                     key={linkData.name}
-                    className={isActive ? "text-primary" : "text-black"}
+                    className={isActive ? "text-primary" : "text-white"}
                     href={linkData.herf}>
                     {linkData.name}
                   </Link>
