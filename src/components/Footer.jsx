@@ -22,8 +22,7 @@ const Footer = () => {
               </p>
               <div className="text-white text-[28px] font-medium flex gap-4 items-center">
                 <h3 className="">Follow Us</h3>
-
-                <div className=" border-t-2 w-12 border-primary" />
+                <div className="border-t-2 w-12 border-primary" />
               </div>
               <div className="flex gap-5 text-white">
                 <FaFacebookF className="bg-gray9 p-3 h-10 w-10 rounded-full hover:bg-primary duration-300" />
@@ -38,8 +37,7 @@ const Footer = () => {
                 {FooterCompanyData.map((val) => (
                   <div
                     key={val.id}
-                    className="text-slate text-base font-medium"
-                  >
+                    className="text-slate text-base font-medium">
                     {val.marketing}
                   </div>
                 ))}
