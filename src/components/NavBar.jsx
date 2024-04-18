@@ -42,12 +42,12 @@ const NavBar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="bg-Secondary text-slate">
+    <section className="bg-Secondary text-slate border-b border-slate">
       <div className="container mx-auto px-4 flex justify-between items-center h-[100px]">
         <Link href="/home">
           <Image src={Logo} alt="image" priority />
         </Link>
-        <div className="lg:flex hidden xl:gap-12 gap-8 font-medium">
+        <li className="lg:flex hidden xl:gap-12 gap-8 font-medium">
           {links.map((linkData) => {
             const isActive = pathname.startsWith(linkData.herf);
             return (
@@ -59,7 +59,7 @@ const NavBar = () => {
               </Link>
             );
           })}
-        </div>
+        </li>
         {/* nomile navbar  */}
         <div onClick={() => setNav(!nav)} className="cursor-pointer lg:hidden">
           {nav ? (
@@ -70,7 +70,7 @@ const NavBar = () => {
         </div>
         {nav && (
           <div className="absolute md:top-[175px] top-[100px] left-0 right-0 h-[100vh] bg-white">
-            <div className="flex flex-col gap-3 px-6 text-xl font-medium pt-10 items-center">
+            <li className="flex flex-col gap-3 px-6 text-xl font-medium pt-10 items-center">
               {links.map((linkData) => {
                 const isActive = pathname.startsWith(linkData.herf);
                 return (
@@ -83,11 +83,11 @@ const NavBar = () => {
                   </Link>
                 );
               })}
-            </div>
+            </li>
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 export default NavBar;
