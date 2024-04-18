@@ -1,7 +1,9 @@
+import ServicesSection from "@/components/ServicesSection";
+
 const page = () => {
   return (
     <>
-      <div className=""></div>
+      <ServicesSection />
     </>
   );
 };
