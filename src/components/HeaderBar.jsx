@@ -5,7 +5,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 const HeaderBar = () => {
   return (
     <>
-      <div className="bg-gray9">
+      <div className="bg-gray9 md:flex hidden">
         <div className="container mx-auto px-4 flex justify-between py-3 text-white">
           <div className="flex flex-row items-center gap-10">
             <ul className="">
