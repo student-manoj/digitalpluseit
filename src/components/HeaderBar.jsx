@@ -22,10 +22,10 @@ const HeaderBar = () => {
             </ul>
           </div>
           <div className="flex gap-5">
-            <FaFacebookF className="bg-black p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
-            <FaTwitter className="bg-black p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
-            <FaInstagram className="bg-black p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
-            <FaYoutube className="bg-black p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
+            <FaFacebookF className="bg-Secondary p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
+            <FaTwitter className="bg-Secondary p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
+            <FaInstagram className="bg-Secondary p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
+            <FaYoutube className="bg-Secondary p-2 h-7 w-7 rounded-full hover:bg-primary duration-300" />
           </div>
         </div>
       </div>
